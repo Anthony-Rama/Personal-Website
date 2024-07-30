@@ -13,6 +13,7 @@
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
+  --bs-indigo-rgb: 102, 16, 242; 
   --bs-purple: #6f42c1;
   --bs-pink: #e21e80;
   --bs-red: #dc3545;
@@ -6694,6 +6695,11 @@ textarea.form-control-lg {
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-indigo {
+  color: #fff !important;
+  background-color: rgba(102, 16, 242, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #1e30f3 !important;
 }
@@ -8274,6 +8280,11 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
+.text-indigo {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-indigo-rgb), var(--bs-text-opacity)) !important;
+}
+
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
@@ -8356,6 +8367,14 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+
+.bg-indigo {
+  background-color: var(--bs-indigo) !important;
+}
+
+.bg-gradient-indigo {
+  background: linear-gradient(180deg, rgba(102, 16, 242, 0.15), rgba(102, 16, 242, 0)) !important;
 }
 
 .user-select-all {
